@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>tente abrir esse stie em vários dispositivos diferente ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML.</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio> <!--arquivos que podemos usar tambem:MP3 WAV OGG-->
+    <!-- outros Exemplos para poder audios no site:
+        <audio preload="metadata" autoplay controls loop> 
+            
+            --------------------------------------------
+            (controls é o botão de controle do audio, loop é para o audio ficar tocando sempre que acabar)
+            --------------------------------------------
+            (para o site carregar mesmo com o audio não carregado 100%)
+            (para fazer o navegador testar todos os tipos caso o primeiro não funcione!)
+            --------------------------------------------
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midia/guanacast-33.ogg" type="audio/ogg">
+            <source src="midia/guanacast-33.wav" type="audio/wav">
+            (caso o navegador não consiga reproduzir, colocar essa mensagem abaixo v)
+            <p> Infelizmente seu navegador não consegue reproduziar o áudio. <a href= "midia/guanacast-33.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+
+
+
+    -->
+</body>
+</html>

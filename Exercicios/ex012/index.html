@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo esta hospedando no meu próprio servidor.</p>
+<!--posso cololar <width ...) para diminuir tamanho da imagem, não do video-->
+    <video width="500" poster="imagens/limoes-capa.png" controls autoplay loop>
+        <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+        <source src="midia/meu-video.ogv.ogv" type="video/mkv">
+        <source src="midia/meu-video.webm.webm" type="video/ogg">
+        <source src="midia/meu-video.mkv.mkv" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+    </video>
+
+    <h1>Inserindo videos do Youtube</h1><!--abrir video no youtube, ir em compartilhar e depois em (incorporar)copiar e colar aqui-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=PaA0whCwyFnWxnxT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--Ele não vai estar consumindo dados do seu(meu)servidor, mas sim do youtube-->
+    <!--também posso usar o Vimeo(pago), mas tem limite de videos de upload-->
+
+
+
+</body>
+</html>

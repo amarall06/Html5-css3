@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = clildren
+
+
+
+
+        */
+
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            font-weight: bold;
+        }
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: yellow;
+        }
+        a::before{
+            content: '»';
+        }
+
+        a::after{
+            content: '«';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/amarall06">Repositorio GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCQnVmCIOB3aj7hCtM-P2SEg">Canal do Youtube</a></li>
+        <li><a href="https://www.twitch.tv/felippelt04">Site da Twitch</a></li>
+    </ul>
+</body>
+</html>
