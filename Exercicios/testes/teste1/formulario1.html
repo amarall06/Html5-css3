@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Encontro de LÊ & FÊ</h1>
+    <form action="teste.php" method="post" autocomplete="on">
+        <fieldset>
+             <legend>Seus Dados</legend>
+               <p>
+                   <label for="iname">Nome:</label>
+                   <input type="text" name="name" id="iname" required minlength="4" maxlength="13" placeholder="Digite seu nome">
+               </p>
+               <p>
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome" required minlength="5" maxlength="45" placeholder="Digite seu Sobrenome">
+               </p>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Encontro</legend>
+
+            <p>
+                <label for="idata">Dia:</label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+            <p>
+                <label for="itime">Horário:</label>
+                <input type="time" name="time" id="itime" required>
+            </p>
+            
+
+
+            <input type="submit" value="Enviar">
+
+        </fieldset>
+
+    </form>
+</body>
+</html>

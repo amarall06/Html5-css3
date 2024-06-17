@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize= "mudouTamanho()">
+    <header> <!--Lembrar de sempre começar com header para cabeçalho do site-->
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+           </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main> <!-- main para o meio/conteudo do site -->
+        <article> <!--conteudo do site-->
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente itaque repellendus molestiae eum non incidunt reprehenderit ipsa deserunt repellat tempora, aspernatur ut, culpa fuga facere. Deserunt dolor voluptatem id recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque qui voluptatem assumenda debitis quo officiis quam atque perspiciatis perferendis rem dignissimos, est ea magnam voluptate nesciunt ex! Dignissimos, consequatur omnis?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium numquam pariatur, quibusdam totam repellat doloremque tempore delectus voluptatibus voluptatem ratione necessitatibus nulla sit possimus aliquid corporis corrupti dolorum dolor rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, reiciendis modi ipsum repellendus expedita nesciunt perspiciatis deserunt quia, esse voluptatum adipisci facere inventore quam odit magni exercitationem a! Iste, quasi?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tempora eius doloribus explicabo rerum alias excepturi ducimus obcaecati. Quae totam ipsa atque exercitationem suscipit molestiae officia modi recusandae cumque corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in dolorum, corporis alias saepe itaque omnis labore ipsum animi fugit ipsam dolor eius ducimus soluta pariatur molestias nulla repudiandae minima?</p>
+
+        </article>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+
+        function mudouTamnho() {
+            if(window.innerwidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

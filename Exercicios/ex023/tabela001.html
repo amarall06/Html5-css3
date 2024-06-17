@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px; /*tamanho do bloco*/
+            height: 400px;
+            border-collapse: collapse; /*Juntar colunas/linhas verticais*/
+        }
+
+        tr.linha {
+            background-color: gray;
+        }
+
+        td {
+            border: 1px solid black; /*criar colunas/tabela*/
+
+            text-align: center; /*alinhamento horizontal (esquerda,direita)*/
+
+            vertical-align: top; /*alinhamento vertical(em cima, embaixo)*/
+
+            padding: 8px; /*afastar da margem*/
+        }
+
+        td.dado {
+            background-color: yellow;
+        }
+
+        .numero{
+            text-align: right; /*deixar o numero na direita*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira Tabela</h1>
+    <!--
+        HIRARQUIA DE TABELA
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                    TABLE DATA = dado de tabela
+    -->
+    <Table>
+        <tr> <!--Primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td class="dado">B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <TD>B5</TD>
+            <TD>C5</TD>
+        </tr>
+    </Table>
+</body>
+</html>
